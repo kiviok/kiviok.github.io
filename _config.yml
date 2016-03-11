@@ -1,6 +1,5 @@
-exclude: [kiviok.iml, Gemfile, Gemfile.lock]
-# sass:
-#   style: compressed
+sass:
+  style: compressed
 title: Kiviok
 permalink: pretty
 author: kiviok
