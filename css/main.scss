@@ -1,0 +1,11 @@
+---
+#// main scss file for loading all styles in jekyll
+---
+
+@import 'normalize',
+ 'parameters',
+ 'skeleton',
+ 'common',
+ 'header',
+ 'nav',
+ 'postlist';

@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{% for post in site.posts %}
+<article>
+
+  <h2 class="title" ><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+  <span class="post-meta">
+    Опубликовано: {{ post.date | date: "%d-%m-%Y" }} Автор: {{ site.author }}
+  </span>
+
+  <!-- Добавление категории -->
+  <!-- <span class="post-category">
+  {{ post.category }}
+</span> -->
+<!-- Добавление значка комментариев -->
+<!-- <span class="disqus-comment-count" data-disqus-identifier="{{ post.url | prepend: site.baseurl }}" >0</span> -->
+
+{{ post.excerpt }}
+<a href="{{ post.url | prepend: site.baseurl }}">>>></a>
+
+</article>
+{% endfor %}

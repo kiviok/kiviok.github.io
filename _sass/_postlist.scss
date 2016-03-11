@@ -1,0 +1,44 @@
+
+article {
+  display: block;
+  background-color: $article-bg;
+  padding: 2rem 2rem 1rem 2rem;
+  box-shadow: 0 .3rem .8rem rgba(0,0,0, .1);
+  border-radius: 1rem;
+
+
+  .title {
+    text-shadow: 0 1px 0 rgba(0,0,0,.8);
+  }
+
+  .post-meta {
+    text-shadow: 0 1px 0 rgba(0,0,0,.5);
+    color: rgb(146, 161, 167);
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .disqus-comment-count {
+
+    text-shadow: 0 1px 0 rgba(0,0,0,.5);
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+    // font-weight: 700;
+    // text-transform: uppercase;
+    background-color: $header-bg;
+    background-image: linear-gradient(to bottom, rgb(114, 126, 131) 0%, $header-bg 100%);
+    border-radius: 2rem 2rem 0 2rem;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    // margin-left: -30px;
+    padding: .5rem 1rem;
+    // position: relative;
+  }
+
+}
+article + article {
+  border-radius: 0 0 1rem 1rem;
+  border-top: 2px solid $main-bg;
+  //  box-shadow: 0 -1px 0 $main-bg;
+  margin-top: -1rem;
+}

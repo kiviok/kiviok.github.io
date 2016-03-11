@@ -1,0 +1,28 @@
+header {
+  // box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.5);
+  border-bottom: solid 1px $font-color;
+
+  a {
+    color: $font-color;
+  }
+
+
+  .logotext {
+    display: inline-block;
+    font-family: 'Jura', cursive;
+    font-size: 6rem;
+    font-weight: 600;
+    vertical-align: middle;
+    // text-shadow: .2rem .2rem 0 rgba(#eee, .5),
+    // .4rem .4rem 0 rgba(0,0,0, .4);
+    text-shadow: rgb(57, 50, 50) 3px 5px 2px,
+    0 -3px 0 rgba(0,0,0,.5);
+  }
+
+  .logoimg {
+    vertical-align: middle;
+    display: inline-block;
+
+  }
+
+}

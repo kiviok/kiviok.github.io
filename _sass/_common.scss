@@ -1,0 +1,15 @@
+
+
+* {
+  transition: all 0.3s;
+}
+
+html, body {
+  height: 100%; //это для footer размещенного всегда внизу страницы
+  min-height: 700px;
+}
+
+a {
+  text-decoration: none;
+  color: $btn-bg;
+}

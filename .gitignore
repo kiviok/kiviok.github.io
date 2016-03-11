@@ -1,0 +1,6 @@
+_site/
+.sass-cache/
+.idea/
+kiviok.iml
+jekylldev.iml
+Gemfile.lock
