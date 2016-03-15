@@ -1,30 +1,17 @@
 <head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>{% if page.title %}{{ page.title | escape }} - {% endif %}{{ site.title | escape }}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <!-- <meta name="author" content=""> -->
-  <!-- Yandex and Google webmasters-->
+  <meta name="description" content="{% if page.description %} {{ page.description | strip_html | strip_newlines }} {% else if page.excerpt %} {{ page.excerpt | strip_html | strip_newlines | truncate: 160 }} {% else %} {{ site.description }} {% endif %}">
+
   <meta name="google-site-verification" content="oZde39_1iDL1dqk_7GAEX1vWfLpJPtN9MQ3Qgdlz-mY" />
   <meta name='yandex-verification' content='6fbfc621682306df' />
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- RSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <link rel="alternate" type="application/atom+xml" title="The Creative Blog" href="/atom.xml" />
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!-- <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'> -->
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="{{ "/img/favicon.ico" | prepend: site.baseurl }}">
-
 </head>
