@@ -17,8 +17,8 @@ layout: default
 <!-- Добавление значка комментариев -->
 <!-- <span class="disqus-comment-count" data-disqus-identifier="{{ post.url | prepend: site.baseurl }}" >0</span> -->
 
-{{ post.excerpt }}
-<a href="{{ post.url | prepend: site.baseurl }}">>>></a>
+{{ post.excerpt | strip_html | truncate: 350}}
+<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">Читать полностью >></a>
 </article>
 
 {% endfor %}
