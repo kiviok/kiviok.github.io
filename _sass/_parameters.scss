@@ -1,12 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-@import url(https://fonts.googleapis.com/css?family=Jura:600&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin,cyrillic);
 
-$font-family: "Roboto", Arial, sans-serif;
-$header-bg: rgb(69, 89, 92);
-$main-bg: rgb(80, 70, 70);
-$article-bg: rgb(88, 80, 80);
-$active-bg: rgb(57, 50, 50);
-$font-color: rgb(229, 252, 194);
-$btn-bg: rgb(69, 173, 168);
-$ctrl-bg: rgb(157, 224, 173);
-$active-font: rgb(167, 208, 106);
+$font-family: "Open Sans", Arial, sans-serif;
+$font-family-header: "Open Sans", Arial, sans-serif;
+$font-family-headings: "Open Sans", Arial, sans-serif;
+
+
+$background-color-header: rgb(69, 89, 92);
+$background-color-main: rgb(80, 70, 70);
+$background-color-article: rgb(88, 80, 80);
+$background-color-selected: rgb(57, 50, 50);
+$background-color-success: rgb(157, 224, 173);
+
+$text-color: rgb(229, 252, 194);
+$text-color-anchor: rgb(69, 173, 168);
+$text-color-anchor-hover: rgb(93, 251, 222);
+$text-color-active: rgb(167, 208, 106);

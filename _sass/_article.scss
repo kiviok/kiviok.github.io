@@ -1,0 +1,36 @@
+
+article {
+  display: block;
+  background-color: $background-color-article;
+  padding: 2rem 2rem 1rem 2rem;
+  box-shadow: 0 .3rem .8rem rgba(0,0,0, .1);
+  border-radius: 1rem;
+
+  .title {
+    text-shadow: 0 1px 0 rgba(0,0,0,.8);
+  }
+
+  .post-meta {
+    text-shadow: 0 1px 0 rgba(0,0,0,.5);
+    color: rgb(146, 161, 167);
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style-type: circle;
+    padding: 1rem;
+    padding-left: 5rem;
+    background-color: $background-color-main;
+    box-shadow: 0 .3rem .8rem rgba(0,0,0, .1);
+    border-radius: 1rem;
+  }
+
+
+}
+article + article {
+  border-radius: 0 0 1rem 1rem;
+  border-top: 2px solid $background-color-main;
+  //  box-shadow: 0 -1px 0 $background-color-main;
+  margin-top: -1rem;
+}

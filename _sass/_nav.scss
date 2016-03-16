@@ -7,10 +7,9 @@ header ul {
     display: inline-block;
 
     .tab-name {
-      font-family: 'Jura', Arial, sans-serif;
       text-transform: uppercase;
-      font-size: 1.8rem;
-      // font-weight: 700;
+      font-size: 1.6rem;
+      // font-weight: 600;
     }
 
     a {
@@ -29,8 +28,8 @@ header ul {
     .active, .active:hover {
       box-shadow: inset -1px -1px 2px rgba(#fff, 0.5),
       inset 2px 2px 3px rgba(0,0,0, 0.8);
-      background: $active-bg;
-      color: rgba($font-color, 0.7);
+      background: $background-color-selected;
+      color: rgba($text-color, 0.7);
     }
   }
 }
