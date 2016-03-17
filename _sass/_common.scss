@@ -4,7 +4,13 @@
 
 html, body {
   height: 100%; //это для footer размещенного всегда внизу страницы
-  min-height: 700px;
+  // min-height: 1200px;
+}
+
+.push-footer {
+  height: auto;
+  margin-bottom: -150px;
+  min-height: 100%;
 }
 
 a {

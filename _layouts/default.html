@@ -4,14 +4,17 @@
 {% include head.html %}
 
 <body>
+  <div class="push-footer">
+    {% include header.html %}
 
-  {% include header.html %}
+    <main class="container row">
+      <div class="twelve columns">
+        {{ content }}
+      </div>
+    </main>
+  </div>
 
-  <main class="container row">
-    <div class="twelve columns">
-      {{ content }}
-    </div>
-  </main>
+  {% include footer.html %}
 
   <script id="dsq-count-scr" src="//kiviok.disqus.com/count.js" async>
   // DISQUSWIDGETS.getCount({reset: true});
