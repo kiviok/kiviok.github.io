@@ -1,5 +1,15 @@
 footer {
-height: 150px;
-padding: 15px;
-  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.5);
+  height:50px;
+  padding: 15px;
+  background-color: $background-color-selected;
+  box-shadow: 0 -1px 4px  rgba(0, 0, 0, 0.5);
+
+  .social {
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  a {
+    margin-right: 1rem;
+  }
 }

@@ -8,8 +8,7 @@ html, body {
 }
 
 .push-footer {
-  height: auto;
-  margin-bottom: -150px;
+  // height: auto;
   min-height: 100%;
 }
 
@@ -17,7 +16,7 @@ a {
   text-decoration: none;
   color: $text-color-anchor;
 }
-a:hover {
+a:hover {  
   color: $text-color-anchor-hover;
 }
 

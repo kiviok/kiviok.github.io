@@ -1,7 +1,9 @@
 header {
   font-family: $font-family-header;
-  // box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.5);
-  border-bottom: solid 1px $text-color;
+
+  // box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.5);  
+  margin-bottom: 2rem;
+
 
   a, a:hover {
     color: $text-color;
