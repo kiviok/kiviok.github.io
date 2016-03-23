@@ -4,14 +4,19 @@
 
 html, body {
   height: 100%; //это для footer размещенного всегда внизу страницы
-  min-height: 700px;
+  // min-height: 1200px;
+}
+
+.push-footer {
+  // height: auto;
+  min-height: 100%;
 }
 
 a {
   text-decoration: none;
   color: $text-color-anchor;
 }
-a:hover {
+a:hover {  
   color: $text-color-anchor-hover;
 }
 
