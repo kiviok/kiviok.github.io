@@ -7,7 +7,8 @@ layout: default
 <article>
   <h2 class="title" ><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
   <span class="post-meta">
-    Опубликовано: {{ post.date | date: "%d-%m-%Y" }} Автор: {{ site.author }}
+    Опубликовано: {{ post.date | date: "%d-%m-%Y" }}
+    <!-- Автор: {{ site.author }} -->
   </span>
 
   <!-- Добавление категории -->
