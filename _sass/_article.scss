@@ -6,8 +6,9 @@ article {
   box-shadow: 0 .3rem .8rem rgba(0,0,0, .1);
   border-radius: 1rem;
 
-  // .title {
-  //   text-shadow: 0 1px 0 rgba(0,0,0,.8);
+  // .title, h3, h4, h5, h6 {
+  //   color: $text-color-active;
+  //   text-shadow: 3px 3px 5px rgba(0,0,0,.8);
   // }
 
   .post-meta {

@@ -15,22 +15,11 @@ html, body {
 a {
   text-decoration: none;
   color: $text-color-anchor;
+  text-shadow: 2px 2px 4px rgba(0,0,0,.8);
 }
-a:hover {  
+a:hover {
+  text-shadow: 2px 2px 3px rgba(0,0,0,.4);
   color: $text-color-anchor-hover;
-}
-
-.label {
-  display: inline;
-  padding: .2em .6em .3em;
-  font-size: 75%;
-  font-weight: bold;
-  line-height: 1;
-  color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: .25em;
 }
 
 .disqus-comment-count {

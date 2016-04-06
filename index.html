@@ -5,7 +5,7 @@ layout: default
 {% for post in site.posts limit:5 %}
 
 <article>
-  <h2 class="title" ><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+  <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
   <span class="post-meta">
     Опубликовано: {{ post.date | date: "%d-%m-%Y" }}
     <!-- Автор: {{ site.author }} -->
