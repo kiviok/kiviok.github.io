@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% for post in site.posts limit:5 %}
+{% for post in site.posts limit:10 %}
 
 <article>
   <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
