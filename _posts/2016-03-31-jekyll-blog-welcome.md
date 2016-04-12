@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Блог на Jekyll. Быстрый старт.
-date: 2016-03-31 14:49
+date: 2016-03-31 14:49 +0300
 description: Подготовка к установке jekyll, неообходимые компоненты, быстрый старт с Jekyll.
 comments: true
 ---
