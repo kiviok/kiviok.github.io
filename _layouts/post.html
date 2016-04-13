@@ -2,7 +2,7 @@
 layout: default
 ---
 <article  itemscope itemtype="http://schema.org/BlogPosting">
-  <h2 class="title" itemprop="name headline">{{ page.title }}</h2>
+  <h3 class="title" itemprop="name headline">{{ page.title }}</h3>
   <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">Опубликовано: {{ page.date | date: "%d-%m-%Y" }}</time> </p>
   <div  itemprop="articleBody">
     {{ content }}

@@ -38,3 +38,20 @@ a:hover {
   padding: .5rem 1rem;
   // position: relative;
 }
+
+blockquote {
+  padding: 10px 15px;
+  margin: 15px;
+  border-left: 3px solid $background-color-selected;
+  line-height: 1.4;
+  font-style: italic;
+
+  p {
+    margin: 0;
+  }
+}
+
+ul, ol {
+  padding: 1rem;
+  padding-left: 5rem;
+}
