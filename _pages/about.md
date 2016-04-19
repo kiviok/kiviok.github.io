@@ -1,6 +1,7 @@
 ---
 layout: default
 title: О сайте
+permalink: /about/
 
 ---
 ## О сайте
