@@ -1,0 +1,15 @@
+.pagination {
+  width: 22rem;
+  margin: 1rem auto;
+
+
+  .page_number {
+    margin-bottom: 1rem;
+    display: block;
+    font-size: 85%;
+    text-align: center;
+  }
+
+  .previuos {float: left;}
+  .next {float: right}
+}

@@ -1,0 +1,17 @@
+<div class="pagination">
+  <span class="page_number ">Страница: {{ paginator.page }} из {{ paginator.total_pages }}</span>
+
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path }}" class="previous">Предыдущая</a>
+  {% else %}
+  <span class="previous">Предыдущая</span>
+  {% endif %}
+
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path }}" class="next">Следующая</a>
+  {% else %}
+  <span class="next ">Следующая</span>
+  {% endif %}
+
+
+</div>

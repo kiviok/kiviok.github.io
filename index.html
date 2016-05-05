@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% for post in site.posts limit:10 %}
+{% for post in paginator.posts %}
 
 <article>
   <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
@@ -10,16 +10,10 @@ layout: default
     Опубликовано: {{ post.date | date: "%d-%m-%Y" }}
     <!-- Автор: {{ site.author }} -->
   </span>
-
-  <!-- Добавление категории -->
-  <!-- <span class="post-category">
-  {{ post.category }}
-</span> -->
-<!-- Добавление значка комментариев -->
-<!-- <span class="disqus-comment-count" data-disqus-identifier="{{ post.url | prepend: site.baseurl }}" >0</span> -->
-
-{{ post.excerpt | strip_html | truncate: 350}}
-<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">Читать полностью >></a>
+  {{ post.excerpt | strip_html | truncate: 350}}
+  <a class="read-more" href="{{ post.url | prepend: site.baseurl }}">Читать полностью >></a>
 </article>
 
 {% endfor %}
+
+{% include pagination.html %}
