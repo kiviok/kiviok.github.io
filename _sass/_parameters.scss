@@ -1,14 +1,15 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin,cyrillic);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
+//@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin,cyrillic);
+//@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab&subset=latin,cyrillic);
 @import url(https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono&subset=latin,cyrillic);
 
 
 
-$font-family: "Open Sans", Arial, sans-serif;
+$font-family: "Roboto", Arial, sans-serif;
 $font-family-header: "Roboto Slab", Arial, sans-serif;
 $font-family-headings: "Roboto Slab", Arial, sans-serif;
-$font-family-code: "Ubuntu Mono", monospace;
+$font-family-code: "Roboto Mono", monospace;
 
 
 $background-color-header: rgb(69, 89, 92);

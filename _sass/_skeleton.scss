@@ -125,9 +125,9 @@ html {
 }
 body {
   background: $background-color-main;
-  font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: 1.7em; /* currently ems cause chrome bug misinterpreting rems on body element */
   border-top: 5px solid $text-color-active;
-  line-height: 1.8;
+  line-height: 1.6;
   font-weight: 400;
   font-family: $font-family;
   color: $text-color;
@@ -331,6 +331,8 @@ li {
 code {
   padding: 3px 5px;
   font-family: $font-family-code;
+  font-size: 0.8em;
+
 
   background: $background-color-selected;
   border: 2px solid rgba(#fff, 0.3);

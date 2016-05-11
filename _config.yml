@@ -1,13 +1,15 @@
 gems: [jekyll-paginate]
+paginate_path: /main/page:num
+paginate: 5
+
 sass:
   style: compressed
+
 title: Kiviok
-permalink: /:year/:month/:day/:title/
 author: kiviok
 description: > # "url:"
  Сайт о хобби в программировании и веб-технологии.
 url: http://kiviok.ru
-include: ["_pages"]
 
-paginate_path: /main/page:num
-paginate: 5
+permalink: /:year/:month/:day/:title/
+include: ["_pages"]

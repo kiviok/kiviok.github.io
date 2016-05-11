@@ -26,6 +26,7 @@ comments: true
 <!-- biography.html -->
 ---
 layout: default
+permalink: /biography
 ---
 <h3>Самые известные космонавты СССР и России</h3>
 <ul>
@@ -40,6 +41,7 @@ layout: default
 <!-- media.html -->
 ---
 layout: default
+permalink: /media
 ---
 <h3>Фото и видео материалы событий.</h3>
 <ul>
