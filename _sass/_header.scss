@@ -1,7 +1,7 @@
 header {
   font-family: $font-family-header;
 
-  // box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.5);  
+  // box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.5);
   margin-bottom: 2rem;
 
 
@@ -22,9 +22,13 @@ header {
     0 -3px 0 rgba(0,0,0,.5);
   }
 
-  .logoimg {
+  .logo {
     vertical-align: middle;
     display: inline-block;
+    width: 64px;
+    height: 64px;
+    background: url(/img/kivi.svg);
+    background-size: cover;
 
   }
 
