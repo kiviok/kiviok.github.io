@@ -1,5 +1,4 @@
 gems: [jekyll-paginate]
-paginate_path: /main/page:num
 paginate: 5
 sass:
   style: compressed
@@ -7,7 +6,7 @@ sass:
 title: Kiviok
 author: kiviok
 description: > # "url:"
- Сайт о хобби в программировании и веб-технологии.
+  Тихое помешательство в рамках здравого смысла.
 url: http://kiviok.ru
 
 permalink: /:year/:month/:day/:title/

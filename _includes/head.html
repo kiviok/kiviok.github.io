@@ -15,6 +15,10 @@
 
   <link rel="icon" type="image/png" href="{{ "/img/favicon.svg" | prepend: site.baseurl }}">
 
+  {% if page.canonical %}
+  <link rel="canonical" href="{{ page.url | prepend: site.url }}">
+  {% endif %}
+
   {% include metrika.html %}
   {% include analytics.html %}
 
