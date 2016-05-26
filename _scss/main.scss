@@ -1,10 +1,18 @@
-@import 'normalize',
- 'parameters',
- 'syntax',
- 'skeleton',
- 'common',
- 'header',
- 'nav',
- 'article',
- 'footer',
- 'pagination';
+@import '1-tools/fonts';
+@import '1-tools/normalize';
+@import '1-tools/vars';
+
+
+@import '2-basics/body-element';
+@import '2-basics/typography';
+@import '2-basics/links';
+@import '2-basics/syntax';
+
+
+@import '3-blocks/articles';
+@import '3-blocks/lists';
+@import '3-blocks/quotes';
+@import '3-blocks/header';
+@import '3-blocks/nav';
+@import '3-blocks/footer';
+@import '3-blocks/pagination';

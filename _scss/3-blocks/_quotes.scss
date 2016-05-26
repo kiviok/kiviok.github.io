@@ -1,0 +1,11 @@
+blockquote {
+  padding: 10px 15px;
+  margin: 15px;
+  border-left: 3px solid $dark-brown;
+  line-height: 1.4;
+  font-style: italic;
+
+  p {
+    margin: 0;
+  }
+}

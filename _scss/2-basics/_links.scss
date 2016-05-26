@@ -1,0 +1,9 @@
+a {
+  text-decoration: none;
+  color: $dark-cyan;
+  text-shadow: 2px 2px 4px rgba(0,0,0,.8);
+}
+a:hover {
+  text-shadow: 2px 2px 3px rgba(0,0,0,.4);
+  color: $aqua;
+}
