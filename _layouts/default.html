@@ -4,21 +4,33 @@
 {% include head.html %}
 
 <body>
-  <div class="push-footer">
-    {% include header.html %}
 
-    <main class="container row">
-      <div class="twelve columns">
-        {{ content }}
-      </div>
-    </main>
+  <div class="header">
+    <a href="/" class="logo"></a>
+    <a href="/" class="logotext">Kiviok</a>
+    <div class="menu">
+      {% include nav.html %}
+    </div>
   </div>
 
-  {% include footer.html %}
+  <div class="main">
+    <div class="content">
+
+    </div>
+    <div class="aside">
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+
+
+  </div>
 
   <!-- <script id="dsq-count-scr" src="//kiviok.disqus.com/count.js" async>
   // DISQUSWIDGETS.getCount({reset: true});
-  </script> -->
+</script> -->
 
 </body>
 </html>

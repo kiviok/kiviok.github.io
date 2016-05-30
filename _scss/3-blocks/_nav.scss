@@ -1,11 +1,7 @@
-header {
-  ul {
-    float: right;
+.nav {
     list-style: none;
-    margin: 3rem auto 0 auto;
-
+    
     li {
-      display: inline-block;
 
       .tab-name {
         text-transform: uppercase;
@@ -34,4 +30,3 @@ header {
       }
     }
   }
-}

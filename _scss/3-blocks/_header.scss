@@ -1,35 +1,27 @@
-header {
+.header {
   font-family: $font-family-header;
-
-  // box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.5);
-  margin-bottom: 2rem;
-
-
   a, a:hover {
     color: $cream;
   }
+}
 
 
-  .logotext {
-    display: inline-block;
+.logotext {
+  font-size: 5rem;
+  font-weight: 600;
+  vertical-align: middle;
+  // text-shadow: .2rem .2rem 0 rgba(#eee, .5),
+  // .4rem .4rem 0 rgba(0,0,0, .4);
+  text-shadow: rgb(57, 50, 50) 3px 5px 2px,
+  0 -3px 0 rgba(0,0,0,.5);
+}
 
-    font-size: 5rem;
-    font-weight: 600;
-    vertical-align: middle;
-    // text-shadow: .2rem .2rem 0 rgba(#eee, .5),
-    // .4rem .4rem 0 rgba(0,0,0, .4);
-    text-shadow: rgb(57, 50, 50) 3px 5px 2px,
-    0 -3px 0 rgba(0,0,0,.5);
-  }
+.logo {
+  display: inline-block;
+  width: 68px;
+  height: 68px;
+  background: url(/img/kivi.svg);
+  background-size: contain;
 
-  .logo {
-    vertical-align: middle;
-    display: inline-block;
-    width: 64px;
-    height: 64px;
-    background: url(/img/kivi.svg);
-    background-size: cover;
-
-  }
 
 }
