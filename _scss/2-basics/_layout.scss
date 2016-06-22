@@ -12,12 +12,12 @@ body {
   flex: auto;
 }
 .header {
-
+margin-bottom: 20px;
   width: 100%;
   max-width: 960px;
   min-width: 430px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-self: center;
   justify-content: flex-start;
   box-sizing: border-box;
@@ -33,7 +33,8 @@ body {
 .menu  {
   flex-grow: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+
 }
 
 .main {
@@ -47,10 +48,10 @@ body {
   justify-content: space-between;
 }
 .content {
-  background: #8fa165;
-  height: 500px;
-  width: 150px;
-  flex-grow: 1;
+  // background: #8fa165;
+  // height: 500px;
+  // width: 150px;
+  // flex-grow: 1;
 }
 
 .aside {
@@ -59,12 +60,9 @@ body {
   // width: 200px;
 }
 
-.footer {
+footer {
   align-self: center;
-  height: 80px;
-  background: #222;
   width: 100%;
-  max-width: 960px;
-  min-width: 430px;
-  box-sizing: border-box;
+  margin-top: 20px;
+
 }

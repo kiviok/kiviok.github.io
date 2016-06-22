@@ -1,32 +1,32 @@
 .nav {
-    list-style: none;
-    
-    li {
+  list-style: none;
 
-      .tab-name {
-        text-transform: uppercase;
-        font-size: 1.6rem;
-        // font-weight: 600;
-      }
+  li {
+    display: inline-block;
+    .tab-name {
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      // font-weight: 600;
+    }
 
-      a {
-        padding: 0.2rem 1.5rem 0.2rem 1.5rem;
-        margin-right: 1rem;
-        border-radius: 1.5rem;
-        text-align: center;
-        display: block;
-      }
+    a {
+      padding: 0.2rem 1.5rem 0.2rem 1.5rem;
+      margin-right: 1rem;
+      border-radius: 1.5rem;
+      text-align: center;
+      display: block;
+    }
 
-      a:hover {
-        box-shadow: 0 0 0.5rem  rgba(0, 0, 0, 0.8),
-        inset 1px 1px 1px rgba(#fff, 0.3);
-      }
+    a:hover {
+      box-shadow: 0 0 0.5rem  rgba(0, 0, 0, 0.8),
+      inset 1px 1px 1px rgba(#fff, 0.3);
+    }
 
-      .active, .active:hover {
-        box-shadow: inset -1px -1px 2px rgba(#fff, 0.5),
-        inset 2px 2px 3px rgba(0,0,0, 0.8);
-        background: $dark-brown;
-        color: rgba($green, 0.7);
-      }
+    .active, .active:hover {
+      box-shadow: inset -1px -1px 2px rgba(#fff, 0.5),
+      inset 2px 2px 3px rgba(0,0,0, 0.8);
+      background: $dark-brown;
+      color: rgba($green, 0.7);
     }
   }
+}

@@ -19,9 +19,10 @@
 .logo {
   display: inline-block;
   width: 68px;
+  min-width: 68px;
   height: 68px;
   background: url(/img/kivi.svg);
-  background-size: contain;
+  background-size: cover;
 
 
 }

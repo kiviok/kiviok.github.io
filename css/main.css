@@ -2,6 +2,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab&subset=latin,cyrillic);
 @import url(https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono&subset=latin,cyrillic);
+h3 {
+  font-size: 24px; }
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -362,7 +365,7 @@ th {
 /* NOTE
 62.5% = 10px  */
 html {
-  font-size: 62.5%; }
+  font-size: 56.25%; }
 
 body {
   background: #504646;
@@ -396,7 +399,9 @@ h1, h2, h3, h4, h5, h6 {
   h5 {
     font-size: 2.4rem; }
   h6 {
-    font-size: 1.8rem; } }
+    font-size: 1.8rem; }
+  html {
+    font-size: 62.5%; } }
 
 hr {
   margin-top: 3rem;
@@ -412,6 +417,27 @@ a {
 a:hover {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
   color: #5dfbde; }
+
+code {
+  background: #393232 none repeat scroll 0 0;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
+  font-family: "Roboto Mono",monospace;
+  font-size: 0.8em;
+  padding: 3px 5px;
+  white-space: nowrap; }
+
+pre > code {
+  display: block;
+  padding: 0.5rem 1rem;
+  white-space: pre-wrap; }
+
+code {
+  background: #393232 none repeat scroll 0 0;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
+  font-family: "Roboto Mono",monospace;
+  font-size: 0.8em; }
 
 .highlight .c {
   color: #999988;
@@ -683,13 +709,14 @@ body {
       flex: auto; }
 
 .header {
+  margin-bottom: 20px;
   width: 100%;
   max-width: 960px;
   min-width: 430px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -ms-flex-item-align: center;
       align-self: center;
   -ms-flex-pack: start;
@@ -705,8 +732,8 @@ body {
       flex-grow: 1;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center; }
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
 
 .main {
   -ms-flex-item-align: center;
@@ -722,26 +749,15 @@ body {
   -ms-flex-pack: justify;
       justify-content: space-between; }
 
-.content {
-  background: #8fa165;
-  height: 500px;
-  width: 150px;
-  -ms-flex-positive: 1;
-      flex-grow: 1; }
-
 .aside {
   background: #d0cb50;
   height: 350px; }
 
-.footer {
+footer {
   -ms-flex-item-align: center;
       align-self: center;
-  height: 80px;
-  background: #222;
   width: 100%;
-  max-width: 960px;
-  min-width: 430px;
-  box-sizing: border-box; }
+  margin-top: 20px; }
 
 article {
   display: block;
@@ -797,27 +813,30 @@ blockquote {
 .logo {
   display: inline-block;
   width: 68px;
+  min-width: 68px;
   height: 68px;
   background: url(/img/kivi.svg);
-  background-size: contain; }
+  background-size: cover; }
 
 .nav {
   list-style: none; }
-  .nav li .tab-name {
-    text-transform: uppercase;
-    font-size: 1.6rem; }
-  .nav li a {
-    padding: 0.2rem 1.5rem 0.2rem 1.5rem;
-    margin-right: 1rem;
-    border-radius: 1.5rem;
-    text-align: center;
-    display: block; }
-  .nav li a:hover {
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.8), inset 1px 1px 1px rgba(255, 255, 255, 0.3); }
-  .nav li .active, .nav li .active:hover {
-    box-shadow: inset -1px -1px 2px rgba(255, 255, 255, 0.5), inset 2px 2px 3px rgba(0, 0, 0, 0.8);
-    background: #393232;
-    color: rgba(167, 208, 106, 0.7); }
+  .nav li {
+    display: inline-block; }
+    .nav li .tab-name {
+      text-transform: uppercase;
+      font-size: 1.6rem; }
+    .nav li a {
+      padding: 0.2rem 1.5rem 0.2rem 1.5rem;
+      margin-right: 1rem;
+      border-radius: 1.5rem;
+      text-align: center;
+      display: block; }
+    .nav li a:hover {
+      box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.8), inset 1px 1px 1px rgba(255, 255, 255, 0.3); }
+    .nav li .active, .nav li .active:hover {
+      box-shadow: inset -1px -1px 2px rgba(255, 255, 255, 0.5), inset 2px 2px 3px rgba(0, 0, 0, 0.8);
+      background: #393232;
+      color: rgba(167, 208, 106, 0.7); }
 
 footer {
   height: 50px;
@@ -825,7 +844,6 @@ footer {
   background-color: #393232;
   box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.5); }
   footer .social {
-    font-size: 120%;
     margin: 10px auto;
     text-align: center; }
   footer a {

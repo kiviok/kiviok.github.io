@@ -1,5 +1,31 @@
 // .highlight  { background: #ffffff; }
 
+
+code {
+    background: #393232 none repeat scroll 0 0;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0.5rem;
+    font-family: "Roboto Mono",monospace;
+    font-size: 0.8em;
+    padding: 3px 5px;
+    white-space: nowrap;
+  }
+
+
+pre > code {
+    display: block;
+    padding: 0.5rem 1rem;
+    white-space: pre-wrap;
+}
+code {
+    background: #393232 none repeat scroll 0 0;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0.5rem;
+    font-family: "Roboto Mono",monospace;
+    font-size: 0.8em;
+  }
+
+
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
