@@ -3,7 +3,7 @@
 /* NOTE
 62.5% = 10px  */
 html {
-  font-size: 56.25%;  
+  font-size: 56.25%;
 }
 body {
   background: $brown;
@@ -14,4 +14,8 @@ body {
   font-family: $font-family;
   color: $cream;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  transition: all 0.3s;
 }

@@ -378,6 +378,9 @@ body {
   color: #e5fcc2;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
 
+* {
+  transition: all 0.3s; }
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;

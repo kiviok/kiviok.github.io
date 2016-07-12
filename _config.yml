@@ -12,3 +12,14 @@ url: http://kiviok.ru
 permalink: /:year/:month/:day/:title/
 include: ["_pages"]
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      comments: true
+      canonical: true
