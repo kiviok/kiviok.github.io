@@ -7,9 +7,11 @@ layout: default
 <article>
   <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
   <span class="post-meta">
-    Опубликовано: {{ post.date | date: "%d-%m-%Y" }}
+    Опубликовано: {{ post.date | date: "%d-%m-%Y" }} |
     <!-- Автор: {{ site.author }} -->
+    Категория: <a href="{{site.baseurl}}/categories/#{{post.category}}">{{ post.category}}</a>     
   </span>
+
   {{ post.excerpt | strip_html | truncate: 350}}
   <a class="read-more" href="{{ post.url | prepend: site.baseurl }}">Читать полностью >></a>
 </article>

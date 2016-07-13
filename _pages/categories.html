@@ -23,10 +23,10 @@ permalink: /categories/
 	{% endif %}
 {% endfor %}
 
-<h3>Categories</h3>
+<h3>Список всех статей по доступным категориям.</h3>
 
 {% for cat in cats %}
-<h4 id="{{ cat | slugify }}">{{ cat }}</h4>
+<h4 id="{{ cat | slugify }}"> - {{ cat }}</h4>
 <ul>
 	{% for post in site.categories.[cat] %}
 	<li>

@@ -715,11 +715,10 @@ body {
   margin-bottom: 20px;
   width: 100%;
   max-width: 960px;
-  min-width: 430px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-item-align: center;
       align-self: center;
   -ms-flex-pack: start;
@@ -743,7 +742,6 @@ body {
       align-self: center;
   width: 100%;
   max-width: 960px;
-  min-width: 430px;
   -ms-flex-positive: 1;
       flex-grow: 1;
   box-sizing: border-box;
@@ -827,7 +825,7 @@ blockquote {
     display: inline-block; }
     .nav li .tab-name {
       text-transform: uppercase;
-      font-size: 1.6rem; }
+      font-size: 1.4rem; }
     .nav li a {
       padding: 0.2rem 1.5rem 0.2rem 1.5rem;
       margin-right: 1rem;
