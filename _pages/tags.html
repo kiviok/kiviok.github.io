@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tags
+title: Тэги
 permalink: /tags/
 ---
 {% assign rawtags = "" %}
@@ -23,14 +23,14 @@ permalink: /tags/
 	{% endif %}
 {% endfor %}
 
-<h3>Tags</h3>
+<h3>Список всех статей по тэгам.</h3>
 
 {% for tag in tags %}
 	<h4 id="{{ tag | slugify }}">- {{ tag }}</h4>
 	<ul>
 		{% for post in site.tags.[tag] %}
 		<li>
-				{{post.date | date_to_long_string}}
+				{{post.date | date: "%d-%m-%Y"}}
 			<a href="{{post.url}}">{{post.title}}</a>
 		</li>
 		{% endfor %}

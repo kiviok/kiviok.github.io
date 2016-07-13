@@ -5,7 +5,7 @@ description: >-
   В статье рассматриваются основные способы использования различных данных в
   проекте Jekyll. Работа с коллекциями, файлами данных, статическими файлами.
   Collections, data, static files.
-category: development
+category: разработка
 tags: [jekyll]
 ---
 
