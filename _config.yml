@@ -10,7 +10,7 @@ description: > # "url:"
 url: http://kiviok.ru
 
 permalink: /:year/:month/:day/:title/
-include: ["_pages"]
+include: ["_pages", "js"]
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 
 
