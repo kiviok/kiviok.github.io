@@ -3,29 +3,11 @@ layout: default
 title: Категории
 permalink: /categories/
 ---
-{% assign rawcats = "" %}
-{% for post in site.posts %}
-	{% assign pcats = post.category | join:'|' | append:'|' %}
-	{% assign rawcats = rawcats | append:pcats %}
-{% endfor %}
-{% assign rawcats = rawcats | split:'|' | sort %}
-
-
-{% assign cats = "" %}
-{% for cat in rawcats %}
-	{% if cat != "" %}
-		{% if cats == "" %}
-			{% assign cats = cat %}
-		{% endif %}
-		{% unless cats contains cat %}
-			{% assign cats = cats | join:'|' | append:'|' | append:cat | split:'|' %}
-		{% endunless %}
-	{% endif %}
-{% endfor %}
 
 <h3>Список всех статей по доступным категориям.</h3>
 
-{% for cat in cats %}
+{% for postscat in site.categories %}
+{% assign cat = postscat | first %}
 <h4 id="{{ cat | slugify }}"> - {{ cat }}</h4>
 <ul>
 	{% for post in site.categories.[cat] %}

@@ -3,29 +3,11 @@ layout: default
 title: Тэги
 permalink: /tags/
 ---
-{% assign rawtags = "" %}
-{% for post in site.posts %}
-	{% assign ptags = post.tags | join:'|' | append:'|' | downcase %}
-	{% assign rawtags = rawtags | append:ptags %}
-{% endfor %}
-{% assign rawtags = rawtags | split:'|' | sort %}
-
-
-{% assign tags = "" %}
-{% for tag in rawtags %}
-	{% if tag != "" %}
-		{% if tags == "" %}
-			{% assign tags = tag %}
-		{% endif %}
-		{% unless tags contains tag %}
-			{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
-		{% endunless %}
-	{% endif %}
-{% endfor %}
 
 <h3>Список всех статей по тэгам.</h3>
 
-{% for tag in tags %}
+{% for poststag in site.tags %}
+{% assign tag = poststag | first %}
 	<h4 id="{{ tag | slugify }}">- {{ tag }}</h4>
 	<ul>
 		{% for post in site.tags.[tag] %}

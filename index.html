@@ -9,7 +9,7 @@ layout: default
   <span class="post-meta">
     Опубликовано: {{ post.date | date: "%d-%m-%Y" }} |
     <!-- Автор: {{ site.author }} -->
-    Категория: <a href="{{site.baseurl}}/categories/#{{post.category}}">{{ post.category}}</a>     
+    Категория: <a href="{{site.baseurl}}/categories/#{{post.category}}">{{ post.category}}</a>
   </span>
 
   {{ post.excerpt | strip_html | truncate: 350}}

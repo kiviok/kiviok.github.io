@@ -1,4 +1,5 @@
 <ul class="nav">
     <li><a class="{% if page.url == '/' %} active {% endif %}" href="{{ "/" | prepend: site.baseurl }}"><span class="tab-name">Главная</span></a></li>
     <li><a class="{% if page.url == '/categories/' %} active {% endif %}" href="{{ "/categories/" | prepend: site.baseurl }}"><span class="tab-name">Категории</span></a></li>
+    <li>{% include search.html %}</li>
 </ul>
