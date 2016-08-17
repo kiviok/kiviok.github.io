@@ -407,10 +407,17 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 62.5%; } }
 
 hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
+  width: 80%;
+  margin-top: 2em;
+  margin-bottom: 2em;
   border-width: 0;
-  border-top: 1px solid #E1E1E1; }
+  border-top: 2px solid #ad9560; }
+
+strong {
+  font-weight: normal;
+  font-size: 1.1em;
+  color: #a7d06a;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); }
 
 a {
   text-decoration: none;
