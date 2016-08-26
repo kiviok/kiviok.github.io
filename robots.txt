@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: http://kiviok.ru/sitemap.xml
+Host: kiviok.ru
