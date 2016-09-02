@@ -1,5 +1,5 @@
 ---
-title: Kiviok. Начало.
+title: Kiviok. Начало
 date: 2016-03-11 14:39 +0300
 description: Первая статья на сайте под управлением Jekyll. Описание сайта. Вводная статья.
 category: kiviok
