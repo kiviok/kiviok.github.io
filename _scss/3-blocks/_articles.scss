@@ -1,42 +1,16 @@
 article {
+  background: #fff;
   display: block;
-  background-color: $lighter-brown;
-  padding: 2rem 2rem 1rem 2rem;
-  box-shadow: 0 .3rem .8rem rgba(0,0,0, .1);
-  border-radius: 1rem;
+  margin-bottom: 15px;
+  width: 350px;
+  height: 450px;
+  padding: 10px;
+  margin-right: 20px;
+  overflow: hidden;
+  box-shadow:  0 1px 5px 0 rgba(0, 0, 0, 0.24);
 
-  // .title, h3, h4, h5, h6 {
-  //   color: $green;
-  //   text-shadow: 3px 3px 5px rgba(0,0,0,.8);
-  // }
-
-  .post-meta {
-    text-shadow: 0 1px 0 rgba(0,0,0,.5);
-    color: rgb(146, 161, 167);
-    display: block;
-    margin-bottom: 1rem;
+  &:nth-child(2) {
+    height: 250px;
+    margin-bottom: -200px;
   }
-
-  .read-more {
-    display: block;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-  }
-
-  img {
-    border-radius: .5rem;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    max-width: 100%;
-
-    &:hover {
-      opacity: 0.75;
-    }
-  }
-
-}
-article + article {
-  border-radius: 0 0 1rem 1rem;
-  border-top: 4px solid $brown;
-  //  box-shadow: 0 -1px 0 $brown;
-  margin-top: -1rem;
 }

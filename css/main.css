@@ -1,16 +1,12 @@
-@charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab&subset=latin,cyrillic);
-@import url(https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Mono&subset=latin,cyrillic);
-h3 {
-  font-size: 24px; }
-
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono&subset=latin,cyrillic);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -360,512 +356,188 @@ td,
 th {
   padding: 0; }
 
-/* Base Styles
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* NOTE
-62.5% = 10px  */
+a {
+  text-decoration: none; }
+
 html {
-  font-size: 56.25%; }
-
-body {
-  background: #504646;
-  font-size: 1.7em;
-  /* currently ems cause chrome bug misinterpreting rems on body element */
-  border-top: 5px solid #a7d06a;
-  line-height: 1.6;
-  font-weight: 400;
-  font-family: Roboto, Arial, sans-serif;
-  color: #e5fcc2;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
-
-* {
-  transition: color 0.3s; }
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.85); }
+  @media only screen and (min-width: 0) {
+    html {
+      font-size: 14px; } }
+  @media only screen and (min-width: 992px) {
+    html {
+      font-size: 14.5px; } }
+  @media only screen and (min-width: 1200px) {
+    html {
+      font-size: 15px; } }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 2rem;
-  font-weight: 300;
-  font-family: "Roboto Slab", Arial, sans-serif;
-  color: #a7d06a;
-  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8); }
+  font-weight: 400;
+  line-height: 1.1; }
 
-/* Larger than phablet */
-@media (min-width: 550px) {
-  h1 {
-    font-size: 5.0rem; }
-  h2 {
-    font-size: 4.2rem; }
-  h3 {
-    font-size: 3.6rem; }
-  h4 {
-    font-size: 3.0rem; }
-  h5 {
-    font-size: 2.4rem; }
-  h6 {
-    font-size: 1.8rem; }
-  html {
-    font-size: 62.5%; } }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
+  font-family: "Roboto Slab", sans-serif; }
 
-hr {
-  width: 80%;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  border-width: 0;
-  border-top: 2px solid #ad9560; }
+h1 {
+  font-size: 4.2rem;
+  line-height: 110%;
+  margin: 2.1rem 0 1.68rem 0; }
+
+h2 {
+  font-size: 3.56rem;
+  line-height: 110%;
+  margin: 1.78rem 0 1.424rem 0; }
+
+h3 {
+  font-size: 2.92rem;
+  line-height: 110%;
+  margin: 1.46rem 0 1.168rem 0; }
+
+h4 {
+  font-size: 2.28rem;
+  line-height: 110%;
+  margin: 1.14rem 0 0.912rem 0; }
+
+h5 {
+  font-size: 1.64rem;
+  line-height: 110%;
+  margin: 0.82rem 0 0.656rem 0; }
+
+h6 {
+  font-size: 1rem;
+  line-height: 110%;
+  margin: 0.5rem 0 0.4rem 0; }
+
+em {
+  font-style: italic; }
 
 strong {
-  font-weight: normal;
-  font-size: 1.1em;
-  color: #a7d06a;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); }
+  font-weight: 500; }
 
-a {
-  text-decoration: none;
-  color: #45ada8;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); }
+small {
+  font-size: 75%; }
 
-a:hover {
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
-  color: #5dfbde; }
+.light {
+  font-weight: 300; }
 
-code {
-  background: #393232 none repeat scroll 0 0;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  border-radius: 0.5rem;
-  font-family: "Roboto Mono",monospace;
-  font-size: 0.8em;
-  padding: 3px 5px;
-  white-space: nowrap; }
+.thin {
+  font-weight: 200; }
 
-pre > code {
-  display: block;
-  padding: 0.5rem 1rem;
-  white-space: pre-wrap; }
-
-code {
-  background: #393232 none repeat scroll 0 0;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  border-radius: 0.5rem;
-  font-family: "Roboto Mono",monospace;
-  font-size: 0.8em; }
-
-.highlight .c {
-  color: #999988;
-  font-style: italic; }
-
-/* Comment */
-.highlight .err {
-  color: #a61717;
-  background-color: #e3d2d2; }
-
-/* Error */
-.highlight .k {
-  font-weight: bold; }
-
-/* Keyword */
-.highlight .o {
-  font-weight: bold; }
-
-/* Operator */
-.highlight .cm {
-  color: #999988;
-  font-style: italic; }
-
-/* Comment.Multiline */
-.highlight .cp {
-  color: #999999;
-  font-weight: bold; }
-
-/* Comment.Preproc */
-.highlight .c1 {
-  color: #999988;
-  font-style: italic; }
-
-/* Comment.Single */
-.highlight .cs {
-  color: #999999;
-  font-weight: bold;
-  font-style: italic; }
-
-/* Comment.Special */
-.highlight .gd {
-  color: #000000;
-  background-color: #ffdddd; }
-
-/* Generic.Deleted */
-.highlight .gd .x {
-  color: #000000;
-  background-color: #ffaaaa; }
-
-/* Generic.Deleted.Specific */
-.highlight .ge {
-  font-style: italic; }
-
-/* Generic.Emph */
-.highlight .gr {
-  color: #aa0000; }
-
-/* Generic.Error */
-.highlight .gh {
-  color: #999999; }
-
-/* Generic.Heading */
-.highlight .gi {
-  color: #000000;
-  background-color: #ddffdd; }
-
-/* Generic.Inserted */
-.highlight .gi .x {
-  color: #000000;
-  background-color: #aaffaa; }
-
-/* Generic.Inserted.Specific */
-.highlight .go {
-  color: #888888; }
-
-/* Generic.Output */
-.highlight .gp {
-  color: #555555; }
-
-/* Generic.Prompt */
-.highlight .gs {
-  font-weight: bold; }
-
-/* Generic.Strong */
-.highlight .gu {
-  color: #aaaaaa; }
-
-/* Generic.Subheading */
-.highlight .gt {
-  color: #aa0000; }
-
-/* Generic.Traceback */
-.highlight .kc {
-  font-weight: bold; }
-
-/* Keyword.Constant */
-.highlight .kd {
-  font-weight: bold; }
-
-/* Keyword.Declaration */
-.highlight .kp {
-  font-weight: bold; }
-
-/* Keyword.Pseudo */
-.highlight .kr {
-  font-weight: bold; }
-
-/* Keyword.Reserved */
-.highlight .kt {
-  color: #445588;
-  font-weight: bold; }
-
-/* Keyword.Type */
-.highlight .m {
-  color: #009999; }
-
-/* Literal.Number */
-.highlight .s {
-  color: #d96884; }
-
-/* Literal.String */
-.highlight .na {
-  color: #1f9999; }
-
-/* Name.Attribute */
-.highlight .nb {
-  color: #0086B3; }
-
-/* Name.Builtin */
-.highlight .nc {
-  color: #445588;
-  font-weight: bold; }
-
-/* Name.Class */
-.highlight .no {
-  color: #008080; }
-
-/* Name.Constant */
-.highlight .ni {
-  color: #800080; }
-
-/* Name.Entity */
-.highlight .ne {
-  color: #990000;
-  font-weight: bold; }
-
-/* Name.Exception */
-.highlight .nf {
-  color: #990000;
-  font-weight: bold; }
-
-/* Name.Function */
-.highlight .nn {
-  color: #555555; }
-
-/* Name.Namespace */
-.highlight .nt {
-  color: #6a6ab4; }
-
-/* Name.Tag */
-.highlight .nv {
-  color: #008080; }
-
-/* Name.Variable */
-.highlight .ow {
-  font-weight: bold; }
-
-/* Operator.Word */
-.highlight .w {
-  color: #bbbbbb; }
-
-/* Text.Whitespace */
-.highlight .mf {
-  color: #009999; }
-
-/* Literal.Number.Float */
-.highlight .mh {
-  color: #009999; }
-
-/* Literal.Number.Hex */
-.highlight .mi {
-  color: #009999; }
-
-/* Literal.Number.Integer */
-.highlight .mo {
-  color: #009999; }
-
-/* Literal.Number.Oct */
-.highlight .sb {
-  color: #d14; }
-
-/* Literal.String.Backtick */
-.highlight .sc {
-  color: #d14; }
-
-/* Literal.String.Char */
-.highlight .sd {
-  color: #d14; }
-
-/* Literal.String.Doc */
-.highlight .s2 {
-  color: #d14; }
-
-/* Literal.String.Double */
-.highlight .se {
-  color: #d14; }
-
-/* Literal.String.Escape */
-.highlight .sh {
-  color: #d14; }
-
-/* Literal.String.Heredoc */
-.highlight .si {
-  color: #d14; }
-
-/* Literal.String.Interpol */
-.highlight .sx {
-  color: #d14; }
-
-/* Literal.String.Other */
-.highlight .sr {
-  color: #009926; }
-
-/* Literal.String.Regex */
-.highlight .s1 {
-  color: #d14; }
-
-/* Literal.String.Single */
-.highlight .ss {
-  color: #990073; }
-
-/* Literal.String.Symbol */
-.highlight .bp {
-  color: #999999; }
-
-/* Name.Builtin.Pseudo */
-.highlight .vc {
-  color: #008080; }
-
-/* Name.Variable.Class */
-.highlight .vg {
-  color: #008080; }
-
-/* Name.Variable.Global */
-.highlight .vi {
-  color: #008080; }
-
-/* Name.Variable.Instance */
-.highlight .il {
-  color: #009999; }
-
-/* Literal.Number.Integer.Long */
 html {
-  background: #bcc6a6;
-  min-height: 100%;
+  background: #ecf0f1;
+  box-sizing: border-box; }
+
+body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
 
-body {
-  margin: 0;
-  padding: 0 15px;
+.container {
+  margin: auto;
+  max-width: 1040px;
+  width: 90%; }
+  @media only screen and (min-width: 601px) {
+    .container {
+      width: 85%; } }
+  @media only screen and (min-width: 993px) {
+    .container {
+      width: 70%; } }
+
+.flex-wrap {
+  margin: auto;
+  max-width: 1040px;
+  width: 90%;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex: auto;
-      flex: auto; }
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: center;
+      align-items: center; }
+  @media only screen and (min-width: 601px) {
+    .flex-wrap {
+      width: 85%; } }
+  @media only screen and (min-width: 993px) {
+    .flex-wrap {
+      width: 70%; } }
 
-.header {
-  margin-bottom: 20px;
+header {
   width: 100%;
-  max-width: 960px;
+  background: #2ecc71;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.28);
+  margin-bottom: 40px; }
+  header h1 {
+    margin: 0;
+    margin-top: 10px; }
+  header .logo {
+    text-indent: -105vh;
+    background: url("/img/kiviok.svg") center no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 80px; }
+
+.nav {
+  margin-left: 20%;
+  list-style: none;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #2980b9;
+  text-align: left; }
+  .nav ul {
+    margin-bottom: 0; }
+  .nav li {
+    display: inline-block;
+    margin-right: 20px; }
+    .nav li:last-child {
+      margin-right: 0; }
+    .nav li a {
+      opacity: 0.5; }
+    .nav li a.active {
+      opacity: 1;
+      border-bottom: #2980b9 3px solid; }
+
+.content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
-  box-sizing: border-box; }
-
-.logo, .logotext, .menu {
-  -ms-flex-item-align: center;
-      align-self: center; }
-
-.menu {
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end; }
-
-.main {
-  -ms-flex-item-align: center;
-      align-self: center;
-  width: 100%;
-  max-width: 960px;
-  -ms-flex-positive: 1;
-      flex-grow: 1;
-  box-sizing: border-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
-
-.aside {
-  background: #d0cb50;
-  height: 350px; }
-
-footer {
-  -ms-flex-item-align: center;
-      align-self: center;
-  width: 100%;
-  margin-top: 20px; }
+      flex-wrap: wrap; }
 
 article {
+  background: #fff;
   display: block;
-  background-color: #585050;
-  padding: 2rem 2rem 1rem 2rem;
-  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.1);
-  border-radius: 1rem; }
-  article .post-meta {
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
-    color: #92a1a7;
-    display: block;
-    margin-bottom: 1rem; }
-  article .read-more {
-    display: block;
-    margin-bottom: 2rem;
-    margin-top: 1rem; }
-  article img {
-    border-radius: .5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    max-width: 100%; }
-    article img:hover {
-      opacity: 0.75; }
+  margin-bottom: 15px;
+  width: 350px;
+  height: 450px;
+  padding: 10px;
+  margin-right: 20px;
+  overflow: hidden;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.24); }
+  article:nth-child(2) {
+    height: 250px;
+    margin-bottom: -200px; }
 
-article + article {
-  border-radius: 0 0 1rem 1rem;
-  border-top: 4px solid #504646;
-  margin-top: -1rem; }
+/*
+@import '2-basics/body-element';
 
-ul, ol {
-  padding: 1rem;
-  padding-left: 5rem; }
+@import '2-basics/links';
+@import '2-basics/syntax';
+@import "2-basics/grid";
 
-blockquote {
-  padding: 10px 15px;
-  margin: 15px;
-  border-left: 3px solid #393232;
-  line-height: 1.4;
-  font-style: italic; }
-  blockquote p {
-    margin: 0; }
 
-.header {
-  font-family: "Roboto Slab", Arial, sans-serif; }
-  .header a, .header a:hover {
-    color: #e5fcc2; }
-
-.logotext {
-  font-size: 5rem;
-  font-weight: 600;
-  vertical-align: middle;
-  text-shadow: #393232 3px 5px 2px, 0 -3px 0 rgba(0, 0, 0, 0.5); }
-
-.logo {
-  display: inline-block;
-  width: 68px;
-  min-width: 68px;
-  height: 68px;
-  background: url(/img/kivi.svg);
-  background-size: cover; }
-
-.nav {
-  list-style: none; }
-  .nav li {
-    display: inline-block; }
-    .nav li .tab-name {
-      text-transform: uppercase;
-      font-size: 1.4rem; }
-    .nav li a {
-      padding: 0.2rem 1.5rem 0.2rem 1.5rem;
-      margin-right: 1rem;
-      border-radius: 1.5rem;
-      text-align: center;
-      display: block; }
-    .nav li a:hover {
-      box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.8), inset 1px 1px 1px rgba(255, 255, 255, 0.3); }
-    .nav li .active, .nav li .active:hover {
-      box-shadow: inset -1px -1px 2px rgba(255, 255, 255, 0.5), inset 2px 2px 3px rgba(0, 0, 0, 0.8);
-      background: #393232;
-      color: rgba(167, 208, 106, 0.7); }
-
-footer {
-  height: 50px;
-  padding: 15px;
-  background-color: #393232;
-  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.5); }
-  footer .social {
-    margin: 10px auto;
-    text-align: center; }
-  footer a {
-    margin-right: 1rem; }
-
-.pagination {
-  width: 22rem;
-  margin: 1rem auto; }
-  .pagination .page_number {
-    margin-bottom: 1rem;
-    display: block;
-    font-size: 85%;
-    text-align: center; }
-  .pagination .previuos {
-    float: left; }
-  .pagination .next {
-    float: right; }
+@import '3-blocks/articles';
+@import '3-blocks/lists';
+@import '3-blocks/quotes';
+@import '3-blocks/header';
+@import '3-blocks/nav';
+@import '3-blocks/footer';
+@import '3-blocks/pagination';
+*/

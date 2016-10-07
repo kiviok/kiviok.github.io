@@ -1,28 +1,23 @@
-.header {
-  font-family: $font-family-header;
-  a, a:hover {
-    color: $cream;
+header {
+  width: 100%;
+  background: #2ecc71;
+  box-shadow: 0 4px 8px rgba(0,0,0,.28);
+  margin-bottom: 40px;
+
+
+  h1 {
+    margin:0;
+    margin-top: 10px;
   }
-}
+  .logo {
+    text-indent: -105vh;
+    background: url("/img/kiviok.svg") center no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 80px;
 
 
-.logotext {
-  font-size: 5rem;
-  font-weight: 600;
-  vertical-align: middle;
-  // text-shadow: .2rem .2rem 0 rgba(#eee, .5),
-  // .4rem .4rem 0 rgba(0,0,0, .4);
-  text-shadow: rgb(57, 50, 50) 3px 5px 2px,
-  0 -3px 0 rgba(0,0,0,.5);
-}
-
-.logo {
-  display: inline-block;
-  width: 68px;
-  min-width: 68px;
-  height: 68px;
-  background: url(/img/kivi.svg);
-  background-size: cover;
 
 
+  }
 }

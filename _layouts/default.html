@@ -5,28 +5,33 @@
 
 <body>
 
-  <div class="header">
-    <a href="/" class="logo"></a>
-    <a href="/" class="logotext">Kiviok</a>
-    <div class="menu">
-      {% include nav.html %}
-    </div>
-  </div>
+<header>
+    <div class="flex-wrap">
+        <h1 ><a class="logo"href="/">Kiviok</a></h1>
 
-  <div class="main">
+        <div class="nav">
+            {% include nav.html %}
+        </div>
+    </div>
+
+
+</header>
+
+<main class="container">
     <div class="content">
-      {{content}}
+        {{content}}
     </div>
     <div class="aside">
 
     </div>
+</main>
 
-  </div>
+{% include pagination.html %}
 
-  {% include footer.html %}
+{% include footer.html %}
 
-  <!-- <script id="dsq-count-scr" src="//kiviok.disqus.com/count.js" async>
-  // DISQUSWIDGETS.getCount({reset: true});
+<!-- <script id="dsq-count-scr" src="//kiviok.disqus.com/count.js" async>
+// DISQUSWIDGETS.getCount({reset: true});
 </script> -->
 
 </body>
