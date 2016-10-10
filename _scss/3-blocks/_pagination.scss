@@ -1,15 +1,28 @@
 .pagination {
-  width: 22rem;
-  margin: 1rem auto;
+  display: block;
+  margin: 30px auto;
 
-
-  .page_number {
-    margin-bottom: 1rem;
-    display: block;
-    font-size: 85%;
+  .active-page {
+    font-family: "Roboto Condensed", serif;
+    font-weight: 600;
+    display: inline-block;
     text-align: center;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    color: #2ecc71;
+    font-size: 120%;
+      
   }
 
-  .previuos {float: left;}
-  .next {float: right}
+  a {
+    font-family: "Roboto Condensed", serif;
+    font-weight: 600;
+    color: #7f8c8d;
+    margin: 0 5px 0 5px;
+  }
+
+  
 }

@@ -1,17 +1,25 @@
+{% if paginator.total_pages > 1 %}
 <div class="pagination">
-  <span class="page_number ">Страница: {{ paginator.page }} из {{ paginator.total_pages }}</span>
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl}}">&laquo;</a>
+    {% else %}
+    <span>&laquo;</span>
+    {% endif %}
 
-  {% if paginator.previous_page %}
-  <a href="{{ paginator.previous_page_path }}" class="previous">Предыдущая</a>
-  {% else %}
-  <span class="previous">Предыдущая</span>
-  {% endif %}
+    {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+    <span class="active-page">{{ page }}</span>
+    {% elsif page == 1 %}
+    <a href="/">{{ page }}</a>
+    {% else %}
+    <a href="{{ site.paginate_path | prepend: site.baseurl | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+    {% endfor %}
 
-  {% if paginator.next_page %}
-  <a href="{{ paginator.next_page_path }}" class="next">Следующая</a>
-  {% else %}
-  <span class="next ">Следующая</span>
-  {% endif %}
-
-
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl}}">&raquo;</a>
+    {% else %}
+    <span>&raquo;</span>
+    {% endif %}
 </div>
+{% endif %}

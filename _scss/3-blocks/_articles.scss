@@ -1,16 +1,108 @@
 article {
   background: #fff;
-  display: block;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 15px;
   width: 350px;
-  height: 450px;
-  padding: 10px;
+  height: auto;
   margin-right: 20px;
-  overflow: hidden;
   box-shadow:  0 1px 5px 0 rgba(0, 0, 0, 0.24);
 
-  &:nth-child(2) {
-    height: 250px;
-    margin-bottom: -200px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+
+
+  .poster {
+    width: 350px;
+    min-height: 225px;
+    background: url("/img/poster.png");
+    opacity: 0.85;
+
+    &:hover {
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+    }
   }
+
+  .post-meta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .post-date {
+      font-size: .9rem;
+      color: $off-black;
+    }
+    .post-category {
+      font-family: "Roboto Condensed", serif;
+      font-weight: 300;
+      color: $off-black;
+      padding: 2px 8px;
+      background: rgba(46, 204, 113, 0.45);
+      border-radius: 2px;
+
+      &:hover {
+        background: rgba(46, 204, 113, 0.85);
+        transition: background 0.4s;
+      }
+    }
+  }
+  .hr {
+    border-bottom: 1px solid $off-black;
+    opacity: 0.2;
+    width: 100%;
+  }
+
+  .post-title {
+    display: block;
+    color: $off-black;
+    padding: 12px;
+    margin-bottom: 0;
+    
+    &:hover {
+      color: #2ecc71;
+      transition: color 0.3s;
+    }
+  }
+
+  .post-excerpt {
+    margin: 0;
+    //min-height: 100px;
+    height: auto;
+    display: block;
+    padding: 0 12px;
+    color: #7f8c8d;
+    font-weight: 300;
+
+  }
+
+  .btn-flat {
+    font-family: "Roboto Condensed", serif;
+
+    display: block;
+    align-self: center;
+    text-align: center;
+    padding: 5px 15px;
+    margin: 15px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: #2ecc71;
+    font-weight: 600;
+
+    &:hover {
+      background: rgba(46, 204, 113, 0.15);
+      transition: background 0.4s;
+    }
+
+  }
+
+  &:hover {
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+
 }

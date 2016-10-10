@@ -1,12 +1,14 @@
 .nav {
+  font-family: 'Roboto Condensed', serif;
+
   margin-left: 20%;
   list-style: none;
   align-self: flex-end;
-  text-transform: uppercase;
-  font-weight: 600;
+  //text-transform: uppercase;
+  //font-weight: 600;
   font-size: 1.2rem;
   color: #2980b9;
-  text-align: left;
+  //text-align: left;
 
   ul {
     margin-bottom: 0;

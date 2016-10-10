@@ -1,5 +1,5 @@
 gems: [jekyll-paginate]
-paginate: 5
+paginate: 6
 # sass:
 #   style: compressed
 
