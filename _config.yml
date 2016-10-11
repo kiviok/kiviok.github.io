@@ -3,7 +3,7 @@ paginate: 6
 # sass:
 #   style: compressed
 
-title: Kiviok
+title: Kiviok - блог начинающего веб-программиста и дизайнера.
 author: kiviok
 description: > # "url:"
   Тихое помешательство в рамках здравого смысла.
