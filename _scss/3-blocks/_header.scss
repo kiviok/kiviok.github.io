@@ -15,5 +15,9 @@ header {
     display: inline-block;
     width: 200px;
     height: 80px;
+
+    @media #{$small-and-down} {
+    display: none;
+    }
   }
 }

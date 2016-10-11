@@ -1,16 +1,26 @@
 footer {
-  height:50px;
+  text-align: center;
+  min-height: 20px;
   padding: 15px;
-  background-color: $dark-brown;
-  box-shadow: 0 -1px 4px  rgba(0, 0, 0, 0.5);
-
-  .social {
-    // font-size: 120%;
-    margin: 10px auto;
-    text-align: center;
-  }
+  background-color: #2ecc71;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.28);
+  margin-top: 2rem;
 
   a {
-    margin-right: 1rem;
+    margin-right: 1.5rem;
+    font-family: "Roboto Condensed", serif;
+    font-size: 1.2rem;
+    color: #34495e;
+    
+    &:hover {
+      opacity: 0.5;
+      -webkit-transform: opacity 0.5s;
+      -moz-transform: opacity 0.5s;
+      -ms-transform: opacity 0.5s;
+      -o-transform: opacity 0.5s;
+      transform: opacity 0.5s;
+    }
   }
+
+
 }

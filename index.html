@@ -5,9 +5,8 @@ layout: default
 <!--{%include search.html%}
 -->
 
-
+<div class="content">
 {% for post in paginator.posts %}
-
 <article>
     <a class="poster" href="{{ post.url | prepend: site.baseurl }}"></a>
     <div class="post-meta">
@@ -16,11 +15,14 @@ layout: default
     </div>
     <div class="hr"></div>
     <h2 ><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-
     <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 150}}</p>
     <a class="btn-flat" href="{{ post.url | prepend: site.baseurl }}">Читать</a>
 </article>
-
 {% endfor %}
+
+</div>
+
+
+
 
 

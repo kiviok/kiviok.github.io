@@ -31,13 +31,13 @@ html{
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   line-height: 1.1;
+  font-family: "Roboto Slab", sans-serif;
 
 }
 
 // Header Styles
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit;
-  font-family: "Roboto Slab", sans-serif;
 }
 h1 { font-size: $h1-fontsize; line-height: 110%; margin: ($h1-fontsize / 2) 0 ($h1-fontsize / 2.5) 0;}
 h2 { font-size: $h2-fontsize; line-height: 110%; margin: ($h2-fontsize / 2) 0 ($h2-fontsize / 2.5) 0;}
