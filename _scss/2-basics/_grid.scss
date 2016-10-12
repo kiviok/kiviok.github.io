@@ -8,7 +8,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-min-height: 100vh;
+  min-height: 100vh;
 }
 
 .content {
@@ -23,10 +23,10 @@ main {
 .container {
   margin: auto;
   max-width: 1040px;
-  width: 90%;
+  width: 98%;
 
   @media #{$medium-and-up} {
-    width: 90%;
+    width: 95%;
   }
   @media #{$large-and-up} {
     width: 90%;

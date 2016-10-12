@@ -455,10 +455,10 @@ main {
 .container {
   margin: auto;
   max-width: 1040px;
-  width: 90%; }
+  width: 98%; }
   @media only screen and (min-width: 601px) {
     .container {
-      width: 90%; } }
+      width: 95%; } }
   @media only screen and (min-width: 993px) {
     .container {
       width: 90%; } }
@@ -623,6 +623,11 @@ article {
   @media only screen and (max-width: 600px) {
     article {
       margin-right: 0; } }
+  @media only screen and (max-width: 992px) {
+    article {
+      width: 90%; }
+      article .poster {
+        display: none; } }
 
 .pagination {
   display: block;

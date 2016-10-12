@@ -135,4 +135,11 @@ article {
   @media #{$small-and-down} {
     margin-right: 0;
   }
+
+  @media #{$medium-and-down} {
+    width: 90%;
+    .poster {
+      display: none;
+    }
+  }
 }
