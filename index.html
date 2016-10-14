@@ -6,19 +6,23 @@ layout: default
 -->
 
 <div class="content">
-{% for post in paginator.posts %}
-<article>
-    <a class="poster" href="{{ post.url | prepend: site.baseurl }}"></a>
-    <div class="post-meta">
-        <a class="post-category" href="{{site.baseurl}}/categories/#{{post.category}}">{{ post.category}}</a>
-        <p class="post-date">{{ post. date | date: "%d-%m-%Y"}} </p>
-    </div>
-    <div class="hr"></div>
-    <h2 ><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-    <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 150}}</p>
-    <a class="btn-flat" href="{{ post.url | prepend: site.baseurl }}">Читать</a>
-</article>
-{% endfor %}
+    {% for post in paginator.posts %}
+    <article>
+        {% if post.poster %}
+        <a class="poster" style="background: url({{post.poster}});" href="{{ post.url | prepend: site.baseurl }}"></a>
+        {% else %}
+        <a class="poster" href="{{ post.url | prepend: site.baseurl }}"></a>
+        {% endif %}
+        <div class="post-meta">
+            <a class="post-category" href="{{site.baseurl}}/categories/#{{post.category}}">{{ post.category}}</a>
+            <p class="post-date">{{ post. date | date: "%d-%m-%Y"}} </p>
+        </div>
+        <div class="hr"></div>
+        <h2 ><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 150}}</p>
+        <a class="btn-flat" href="{{ post.url | prepend: site.baseurl }}">Читать</a>
+    </article>
+    {% endfor %}
 
 </div>
 
