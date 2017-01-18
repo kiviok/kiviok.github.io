@@ -5,9 +5,8 @@
  *    user zoom.
  */
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab&subset=latin,cyrillic);
-@import url(https://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono&subset=latin,cyrillic);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300,400&subset=cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300,400,700&subset=cyrillic);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -416,9 +415,6 @@ h6 {
 em {
   font-style: italic; }
 
-strong {
-  font-weight: 500; }
-
 small {
   font-size: 75%; }
 
@@ -666,6 +662,10 @@ footer {
       opacity: 0.5;
       -webkit-transform: opacity 0.5s;
       transform: opacity 0.5s; }
+
+iframe {
+  display: block;
+  margin: 40px auto; }
 
 blockquote {
   font-style: italic;
