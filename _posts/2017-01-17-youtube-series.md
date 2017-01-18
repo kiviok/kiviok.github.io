@@ -2,7 +2,7 @@
 title: Серии сайта на Jekyll теперь на YouTube
 date: 2017-01-17 14:04+0300
 description: запустил серию видеороликов о построении сайта на Jekyll от идеи до развертывания
-category: jekyll, youtube
+category: [jekyll, youtube]
 tags: [jekyll, youtube, kiviok]
 poster: /img/posters/poster16.svg
 ---
