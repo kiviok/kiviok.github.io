@@ -14,7 +14,9 @@ layout: default
         <a class="poster" href="{{ post.url | prepend: site.baseurl }}"></a>
         {% endif %}
         <div class="post-meta">
-            <a class="post-category" href="{{site.baseurl}}/categories/#{{post.category}}">{{ post.category}}</a>
+            {% for cat in post.category %}
+            <a class="post-category" href="{{site.baseurl}}/categories/#{{cat}}">{{ cat }}</a>
+            {% endfor %}
             <p class="post-date">{{ post. date | date: "%d-%m-%Y"}} </p>
         </div>
         <div class="hr"></div>

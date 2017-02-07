@@ -2,7 +2,7 @@
 title: Блог на Jekyll. Создание статей и страниц
 date: 2016-04-25 15:39 +0300
 description: Описание процесса написания статей на Jekyll а также создание отдельных статических страниц.
-category: разработка
+category: [разработка, jekyll]
 tags: [jekyll]
 poster: /img/posters/poster5.svg
 ---

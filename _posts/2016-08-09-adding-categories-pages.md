@@ -2,7 +2,7 @@
 title: Блог на Jekyll. Категории и тэги
 date: 2016-08-09 14:22
 description: Работа с категориями и тэгами. Добавление страницы со списком всех категорий
-category: разработка
+category: [разработка, jekyll]
 tags: [jekyll]
 poster: /img/posters/poster11.svg
 ---

@@ -5,7 +5,7 @@ date: 2016-08-17 11:39
 description: Системы поиска для статических сайтов. Короткий обзор разных вариантов
 comments: true
 canonical: true
-category: разработка
+category: [разработка, jekyll]
 tags: [jekyll, search]
 poster: /img/posters/poster12.svg
 ---

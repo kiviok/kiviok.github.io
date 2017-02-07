@@ -2,7 +2,7 @@
 title: Блог на Jekyll. Добавление стилей
 date: 2016-05-13 16:00 +0300
 description: Основные моменты при работе со стилями в jekyll.
-category: разработка
+category: [разработка, jekyll]
 tags: [jekyll]
 poster: /img/posters/poster7.svg
 ---

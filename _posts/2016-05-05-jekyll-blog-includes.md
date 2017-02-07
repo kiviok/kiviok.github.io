@@ -2,7 +2,7 @@
 title: Блог на Jekyll. Использование включений - includes
 date: 2016-05-05 14:01 +0300
 description: Начало использования включений в jekyll - includes. Создание навигации сайта с применением includes. Using includes
-category: разработка
+category: [разработка, jekyll]
 tags: [jekyll]
 poster: /img/posters/poster6.svg
 ---

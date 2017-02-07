@@ -2,7 +2,7 @@
 title: Мой путь к Jekyll
 date: 2016-03-15 18:09 +0300
 description: Краткое описание пути, пройденного автором сайта по изучению систем управления содержимым сайта. Начало использования Jekyll
-category: разработка
+category: [разработка, jekyll]
 tags: [jekyll]
 poster: /img/posters/poster1.svg
 ---

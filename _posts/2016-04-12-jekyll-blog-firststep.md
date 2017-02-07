@@ -2,7 +2,7 @@
 title: Блог на Jekyll. Первый шаг
 date: 2016-04-12 14:20 +0300
 description: Описание основных команд по запуску, сборке проекта на Jekyll, основные параметры настройки Jekyll
-category: разработка
+category: [разработка, jekyll]
 tags: [jekyll]
 poster: /img/posters/poster3.svg
 ---

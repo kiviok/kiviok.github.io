@@ -560,14 +560,17 @@ article {
   article .post-meta {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     -ms-flex-align: center;
         align-items: center; }
     article .post-meta .post-date {
+      text-align: right;
+      margin-right: 10px;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
       font-size: .9rem;
       color: rgba(0, 0, 0, 0.85); }
     article .post-meta .post-category {
+      margin-left: 10px;
       font-family: "Roboto Condensed", serif;
       font-weight: 300;
       color: rgba(0, 0, 0, 0.85);

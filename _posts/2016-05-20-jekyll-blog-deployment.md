@@ -2,7 +2,7 @@
 title: Блог на Jekyll. Развертывание на GitHub
 date: 2016-05-20 14:55 +0300
 description: Основные моменты при развертывании сайта jekyll с помощью сервиса на GitHub
-category: разработка
+category: [разработка, jekyll]
 tags: [jekyll]
 poster: /img/posters/poster10.svg
 ---

@@ -4,7 +4,7 @@ date: 2017-01-17 14:04+0300
 description: запустил серию видеороликов о построении сайта на Jekyll от идеи до развертывания
 category: [jekyll, youtube]
 tags: [jekyll, youtube, kiviok]
-poster: /img/posters/poster16.svg
+poster: /img/posters/poster16.png
 ---
 До этого момента на канале YouTube была только парочка видео с обзором моего бывшего ноутбука. Подобное творчество мне понравилось и вот в качестве логичного продолжения решил сделать серии о сайте на Jekyll.
 

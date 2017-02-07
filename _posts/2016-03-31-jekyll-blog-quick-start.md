@@ -2,7 +2,7 @@
 title: Блог на Jekyll. Быстрый старт
 date: 2016-03-31 14:49 +0300
 description: Подготовка к установке jekyll, неообходимые компоненты, быстрый старт с Jekyll.
-category: разработка
+category: [разработка, jekyll]
 tags: [jekyll]
 poster: /img/posters/poster2.svg
 ---

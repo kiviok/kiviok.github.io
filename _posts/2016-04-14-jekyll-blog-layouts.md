@@ -2,7 +2,7 @@
 title: Блог на Jekyll. Макеты страниц
 date: 2016-04-14 15:03 +0300
 description: Создание простого макета страниц layout для jekyll, работа со вложенными макетами nested layouts.
-category: разработка
+category: [разработка, jekyll]
 tags: [jekyll]
 poster: /img/posters/poster4.svg
 ---

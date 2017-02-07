@@ -56,14 +56,18 @@ article {
 
   .post-meta {
     display: flex;
-    justify-content: space-around;
+    //justify-content: space-around;
     align-items: center;
 
     .post-date {
+      text-align: right;
+      margin-right: 10px;
+      flex-grow: 1;
       font-size: .9rem;
       color: $off-black;
     }
     .post-category {
+      margin-left: 10px;
       font-family: "Roboto Condensed", serif;
       font-weight: 300;
       color: $off-black;

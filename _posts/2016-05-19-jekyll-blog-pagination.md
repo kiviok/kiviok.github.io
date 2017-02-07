@@ -2,7 +2,7 @@
 title: Блог на Jekyll. Пагинация
 date: 2016-05-19 13:00 +0300
 description: Добавление простой пагинации на сайт с Jekyll. Jekyll pagination
-category: разработка
+category: [разработка, jekyll]
 tags: [jekyll]
 poster: /img/posters/poster9.svg
 ---

@@ -2,7 +2,7 @@
 title: Использование WebStorm для работы с Jekyll
 date: 2016-09-16 11:30+0300
 description: первоначальная настройка webstorm для удобной работы и написания постов на jekyll
-category: разработка
+category: [разработка, jekyll]
 tags: [jekyll, webstorm]
 poster: /img/posters/poster14.svg
 ---
