@@ -595,7 +595,7 @@ article {
       color: #2ecc71;
       transition: color 0.3s; }
   article .post-excerpt {
-    margin: 0;
+    margin: auto 0 0;
     height: auto;
     display: block;
     padding: 0 12px;
@@ -608,7 +608,7 @@ article {
         align-self: center;
     text-align: center;
     padding: 5px 15px;
-    margin: 15px;
+    margin: auto 15px 15px;
     border-radius: 3px;
     text-transform: uppercase;
     color: #2ecc71;
