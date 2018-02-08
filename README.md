@@ -1,2 +1,2 @@
 ## kiviok.github.io
-There are source files of my personal blog kiviok.ru
+There are source files of my personal blog
